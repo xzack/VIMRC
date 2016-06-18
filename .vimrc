@@ -4,15 +4,15 @@ augroup filetype_vim
 	autocmd FileType vim setlocal foldmethod=marker
 augroup END
 "}}}
+"Vunble Plugin Management{{{
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
-
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 call vundle#end()
 filetype plugin indent on
-
+"}}}
 set backspace=indent,eol,start
 syntax enable
 set hlsearch
@@ -21,7 +21,7 @@ set number
 set hidden
 set history=100
 colorscheme darkblue
-let mapleader = ";"
+let mapleader = "//"
 nnoremap \rr :source ~/.vimrc<CR>
 set tabstop=4
 set softtabstop=4
