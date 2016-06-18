@@ -21,6 +21,7 @@ set number
 set hidden
 set history=100
 colorscheme darkblue
+let mapleader = ";"
 nnoremap \rr :source ~/.vimrc<CR>
 set tabstop=4
 set softtabstop=4
