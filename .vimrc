@@ -5,9 +5,16 @@ augroup filetype_vim
 augroup END
 "}}}
 set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+call vundle#end()
+filetype plugin indent on
+
 set backspace=indent,eol,start
 syntax enable
-filetype plugin indent on
 set hlsearch
 set incsearch
 set number
@@ -19,6 +26,5 @@ set tabstop=4
 set softtabstop=4
 set expandtab
 set cursorline
-set wildmenu
-set showmatch
+set ruler
 inoremap jk <ESC>
