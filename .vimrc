@@ -8,9 +8,15 @@ set nocompatible
 set backspace=indent,eol,start
 syntax enable
 filetype plugin indent on
-set hlsearch incsearch
+set hlsearch
+set incsearch
 set number
 set hidden
 set history=100
 colorscheme darkblue
-map \rr :source ~/.vimrc
+nnoremap \rr :source ~/.vimrc<CR>
+set tabstop=4
+set softtabstop=4
+set expandtab
+set cursorline
+set wildmenu
