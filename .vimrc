@@ -20,3 +20,5 @@ set softtabstop=4
 set expandtab
 set cursorline
 set wildmenu
+set showmatch
+inoremap jk <ESC>
